@@ -1,0 +1,16 @@
+body {
+    background-image: url(back.jpg);
+}
+div{
+    background-color: blueviolet;
+}
+.item-d {
+    display: flex;
+}
+#bigImage {
+    max-height: 557px;
+    margin: 0 40px;
+}
+.item-d img {
+    border: 3px solid rgb(0, 0, 0);
+}

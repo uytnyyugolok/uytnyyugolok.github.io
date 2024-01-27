@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cklik(g) {
+            z = document.getElementById("bigImage");
+            z.src = g;
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(back.jpg);
+        }
+        ul.menu {
+            display: flex;
+            background-color: rgb(176, 79, 196);
+            list-style: none;
+            padding: 1em 1em;
+        }
+        ul.side {
+            display: flex;
+            list-style: none;
+
+        }
+        li {
+            margin-right: 2em;
+        }
+        div.all {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 2em 1em;
+            padding-top: 0.5em;
+            padding-bottom: 5em;
+        }
+        .item{
+            border: rgb(255, 0, 242) solid;
+            width: 150px;
+            margin: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        h1{
+            font-size: 3ch;
+        }
+    </style>
+</head>
+<body>
+    
+  <div class="all">
+    <h1>Уютный уголок</h1> 
+    <ul class="side">
+        <li>Корзина</li> 
+        <li>Избранное</li>
+    </ul>
+  </div>
+  <ul class="menu">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="vines.html">Лианы</a></li>
+    <li><a href="garland.html">Гирлянды</a></li>
+    <li><a href="decor.html">Декор</a></li>
+    <li><a href="food.html">Вкусняшки</a></li>
+  </ul>
+  <div class="item-d">
+    <div class="gtr">
+        <img class="img" src="vines1.jpg" alt="" width="180" height="180" onclick="cklik('vines1.jpg')" ><br>
+        <img class="img" src="6422572409.webp" alt=""width="180" height="180" onclick="cklik('6422572409.webp')"><br>
+        <img class="img" src="6422572411.webp" alt=""width="180" height="180" onclick="cklik('6422572411.webp')"><br>
+    </div>
+    <img class="img" src="vines1.jpg" alt="" id="bigImage">
+    <div class="aaa">
+        <p class="rrrt">лианы (набор) 5 шт.</p> 
+
+        <p class="rrrt">100 рублей</p>
+        <h>Цвет - зелёный
+        </P>
+        <button onclick="calc()" class="hhhhh"><p>Добавить в корзину</p></button>
+        <p>Описание: Набор состоит из пяти веток 220 см. Искуственные лианы подходят для украшения салонов красоты,магазиа,дома и студий. Лиана не требует ухода. </p>
+      
+
+    </div>
+</div>
+</body>
+</html>
